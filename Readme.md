@@ -1,7 +1,7 @@
 
 # http-get
 
-  Simple HTTP Get requests built on libcurl
+  Simple HTTP GET requests backed by libcurl 
 
 ## Installation
 
@@ -11,6 +11,20 @@
 
 ## API
 
+### `response_t *http_get(const char *url)`
+
+  Perform an HTTP GET request on `url`, returning the structure:
+
+    {
+        ok: 1 or 0,
+        status: response status code,
+        data: response text/data,
+        size: size of data
+    }
+
+### `int http_get_file(const char *url, const char *file)`
+
+  Perform an HTTP GET request on `url` and save the response to `file`.  Returns `0` on success and `-1` on failures.
 
 ## License
 
