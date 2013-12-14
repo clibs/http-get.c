@@ -26,6 +26,10 @@
 
   Perform an HTTP GET request on `url` and save the response to `file`.  Returns `0` on success and `-1` on failures.
 
+### `void http_get_free(http_get_response_t *res)`
+
+  Free `res`.
+
 ## License
 
 (The MIT License)
