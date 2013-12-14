@@ -93,3 +93,11 @@ int http_get_file(const char *url, const char *file) {
   return (200 == status && CURLE_ABORTED_BY_CALLBACK != res) ? 0 : -1;
 }
 
+/**
+ * Free the given `res`
+ */
+
+void http_get_free(http_get_response_t *res) {
+  if (NULL == res) return;
+  if (res->data) free(res->data);
+}

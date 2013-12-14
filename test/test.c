@@ -21,6 +21,7 @@ int main(int argc, char **argv) {
       assert(res->data);
       assert(res->ok);
       assert(200 == res->status);
+      http_get_free(res);
     });
   });
 

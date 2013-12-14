@@ -23,4 +23,6 @@ http_get_response_t *http_get(const char *);
 
 int http_get_file(const char *, const char *);
 
+void http_get_free(http_get_response_t *);
+
 #endif
