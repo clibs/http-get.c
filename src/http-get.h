@@ -7,8 +7,8 @@
 //
 
 
-#ifndef __HTTP_GET__
-#define __HTTP_GET__ 1
+#ifndef HTTP_GET_H
+#define HTTP_GET_H 1
 
 #define HTTP_GET_VERSION "0.0.1"
 
