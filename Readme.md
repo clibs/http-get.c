@@ -11,7 +11,7 @@
 
 ## API
 
-### `response_t *http_get(const char *url)`
+### `http_get_response_t *http_get(const char *url)`
 
   Perform an HTTP GET request on `url`, returning the structure:
 

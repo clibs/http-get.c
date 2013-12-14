@@ -17,10 +17,10 @@ typedef struct {
   size_t size;
   long status;
   int ok;
-} response_t;
+} http_get_response_t;
 
-response_t *http_get(const char *url);
+http_get_response_t *http_get(const char *);
 
-int http_get_file(const char *url, const char *file);
+int http_get_file(const char *, const char *);
 
 #endif

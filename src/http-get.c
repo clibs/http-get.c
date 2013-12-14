@@ -17,7 +17,7 @@
 
 static size_t http_get_cb(void *contents, size_t size, size_t nmemb, void *userp) {
   size_t realsize = size * nmemb;
-  response_t *res = userp;
+  http_get_response_t *res = userp;
 
   res->data = realloc(res->data, res->size + realsize + 1);
   if (NULL == res->data) {
@@ -36,10 +36,10 @@ static size_t http_get_cb(void *contents, size_t size, size_t nmemb, void *userp
  * Perform an HTTP(S) GET on `url`
  */
 
-response_t *http_get(const char *url) {
+http_get_response_t *http_get(const char *url) {
   CURL *req = curl_easy_init();
 
-  static response_t res;
+  static http_get_response_t res;
   res.data = malloc(1);
   res.size = 0;
 

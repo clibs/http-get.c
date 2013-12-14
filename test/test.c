@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
 
   describe("http_get", {
     it("should perform an HTTP GET request", {
-      response_t *res = http_get("http://google.com");
+      http_get_response_t *res = http_get("http://google.com");
       assert(res);
       assert(res->data);
       assert(res->ok);
