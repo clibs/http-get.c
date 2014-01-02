@@ -1,7 +1,10 @@
-
 # http-get
 
   Simple HTTP GET requests backed by libcurl 
+
+## Prerequisites
+
+* [`libcurl`](http://curl.haxx.se/docs/install.html)
 
 ## Installation
 
