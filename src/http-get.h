@@ -10,6 +10,10 @@
 #ifndef HTTP_GET_H
 #define HTTP_GET_H 1
 
+#if defined (__unix__) || (defined (__APPLE__) && defined (__MACH__))
+#include <unistd.h>
+#endif
+
 #define HTTP_GET_VERSION "0.1.0"
 
 typedef struct {
