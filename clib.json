@@ -8,9 +8,5 @@
   "src": [
     "src/http-get.c",
     "src/http-get.h"
-  ],
-  "scripts": {
-    "version": "./scripts/update-clib-json && git add clib.json",
-    "test": "make test"
-  }
+  ]
 }
