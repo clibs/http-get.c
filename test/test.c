@@ -23,6 +23,16 @@ int main(int argc, char **argv) {
       assert(200 == res->status);
       http_get_free(res);
     });
+
+    it("should work when the User-Agent header is mandatory", {
+      http_get_response_t *res = http_get("https://api.github.com/repos/clibs/clib/releases/latest");
+      assert(res);
+      assert(res->data);
+      assert(res->ok);
+      assert(200 == res->status);
+      http_get_free(res);
+    });
+
   });
 
   describe("http_get_file", {
