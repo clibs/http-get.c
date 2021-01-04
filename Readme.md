@@ -11,7 +11,7 @@
 
   Install with [clib(1)](https://github.com/clibs/clib):
 
-    $ clib install stephenmathieson/http-get.c
+    $ clib install http-get.c
 
 ## API
 
