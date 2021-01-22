@@ -12,7 +12,7 @@
 
 #include <stdlib.h>
 
-#define HTTP_GET_VERSION "0.3.0"
+#define HTTP_GET_VERSION "0.4.0"
 
 typedef struct {
   char *data;
