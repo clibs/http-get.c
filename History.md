@@ -1,4 +1,4 @@
-0.3.0 / 2021-01-22
+0.4.0 / 2021-01-22
 ==================
   * [refact] Use the correct clib install path/name (#6) 
   * [fix] Compilation fails with unknown type name 'size_t' on Windows (#7)
