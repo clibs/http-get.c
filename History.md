@@ -1,3 +1,11 @@
+0.3.0 / 2021-01-22
+==================
+  * [refact] Use the correct clib install path/name (#6) 
+  * [fix] Compilation fails with unknown type name 'size_t' on Windows (#7)
+
+0.3.0 / 2020-09-16
+==================
+  * [add] Always define the User-Agent header (#5)
 
 0.1.1 / 2014-10-24
 ==================
